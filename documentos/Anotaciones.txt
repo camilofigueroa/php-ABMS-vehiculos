@@ -1,2 +1,21 @@
 
-//
+
+
+Este comando coloca en uso la base de datos en cuestión.
+USE bd_pruebas;
+
+Este comando muestra las tablas de la base de datos actual.
+SHOW TABLES;
+
+Este comando mmuestra las características de una tabla de la base de datos actual.
+DESCRIBE tb_usuarios;
+
+Este comando muestra toda la información de las tablas y las bases de datos.
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS;
+
+Este comando muestra la llave primaria de una base de datos, de una tabla en ella, cuya caraterística sea ser llave primaria.
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'bd_pruebas'
+AND TABLE_NAME = 'tb_usuarios'
+AND COLUMN_KEY = 'PRI';
