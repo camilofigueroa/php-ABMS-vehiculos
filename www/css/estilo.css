@@ -1,0 +1,13 @@
+/**
+* Autor: Camilo Figueroa
+*
+*/
+
+.contenedor-sql-pruebas
+{
+  /*border: dashed;*/
+  background-color: black;
+  color: white;
+  margin: 2px;
+  padding: 10px;
+}
